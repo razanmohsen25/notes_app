@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'Custom_app_Bar.dart';
 import 'Custom_note_item.dart';
+import 'Note_List_View.dart';
 
 class NotesViewBody extends StatelessWidget{
   const NotesViewBody ({super. key}) ;
@@ -15,24 +16,13 @@ class NotesViewBody extends StatelessWidget{
         children: const[
           SizedBox(height: 50,),
           CustomAppBar(),
-          NoteItem(),
+
+          Expanded(child: NoteListView()),
 
 
 
         ],
       ),
     );
-  }
-}
-
-class NoteListView extends StatelessWidget{
-  const NoteListView ({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(itemBuilder: (context,index)
-    {
-      return const NoteItem();
-    });
   }
 }
