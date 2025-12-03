@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 import 'package:notes/cubits/Add_note-cubit/add_note_cubit.dart';
 import 'package:notes/views/widgets/Custom_Text_field.dart';
-import 'package:notes/views/widgets/constants.dart';
+import 'package:notes/constants.dart';
 
 import 'Add_Note_Form.dart';
 import 'Custom_Button.dart';

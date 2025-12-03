@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:meta/meta.dart';
 import 'package:notes/Models/Note_model.dart';
-import 'package:notes/views/widgets/constants.dart';
+import 'package:notes/constants.dart';
 
 part 'add_note_state.dart';
 
@@ -23,6 +23,4 @@ addNote(NoteModel note) async
     }
 
 }
-
-
 }
