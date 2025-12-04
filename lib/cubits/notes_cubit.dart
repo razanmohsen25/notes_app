@@ -16,6 +16,8 @@ class NotesCubit extends Cubit<NotesState> {
 
      notes = notesBox.values.toList();
 
+     emit(NotesSuccess());
+
 
     // اكتب السطر دة لو عاوزة السرعه /لكن اللي فوق لو هنقرا بشكل اوضح
     //emit(NotesSuccess(notesBox.values.toList(),));
